@@ -61,3 +61,14 @@ if st.button('Find Locator'):
 # display locator
 if st.session_state.response is not None:
     st.markdown(st.session_state.response.text, unsafe_allow_html=True)
+
+# Footer with copyright and YouTube channel link
+st.html(
+    """
+    <br>
+    <hr>
+    <div style='text-align: center;'>
+        <p>&copy; 2025 Code With Sri. All rights reserved | Subscribe To Our YouTube Channel - <a style='text-decoration: none' href="https://www.youtube.com/@code-with-sri?sub_confirmation=1" target="_blank">Code With Sri</a></p>
+    </div>
+    """
+)
